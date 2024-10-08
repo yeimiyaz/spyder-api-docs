@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Qt Fundamentals &#8212; Spyder API docs 5 documentation</title>
+    <title>Qt Fundamentals &#8212; Spyder Developer Docs 6 documentation</title>
   
   
   
@@ -36,11 +36,12 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=50c2a312"></script>
+    <script src="_static/documentation_options.js?v=47b62374"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'qt_introduction';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Using Cookiecutter" href="plugin_cookiecutter.html" />
@@ -131,8 +132,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/spyder_logo.svg" class="logo__image only-light" alt="Spyder Developer Docs 6 documentation - Home"/>
+    <script>document.write(`<img src="_static/spyder_logo.svg" class="logo__image only-dark" alt="Spyder Developer Docs 6 documentation - Home"/>`);</script>
   
-    <p class="title logo__title">Spyder API docs 5 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -403,10 +410,9 @@ document.write(`
 <p>To develop a GUI we will add graphical elements of interaction known as widgets, arrange them using layouts. Then, we interconnect those widgets using customized procedures implemented as functions or methods, allowing to trigger behavior from user interaction. In the following, we will develop these ideas in more detail.</p>
 <p>Each type of Qt component is a class starting with the letter <code class="docutils literal notranslate"><span class="pre">Q</span></code> followed by a name related to its functionality.</p>
 <p>The core component of Qt is the <code class="docutils literal notranslate"><span class="pre">QApplication</span></code> class. Every Qt application needs a single instance of this class as the base, from where the Qt <em>event loop</em> is controlled.
-Spyder itself is an instance of <code class="docutils literal notranslate"><span class="pre">QApplication</span></code>, its starting point is in the following two lines of code (spyder/spyder/app/mainwindow.py):</p>
-<p>.. code-block:: python</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>QMainWindow.__init__(self)
-qapp = QApplication.instance()
+Spyder itself is an instance of <code class="docutils literal notranslate"><span class="pre">QApplication</span></code>, its starting point is in the following two lines of code (Spyder/Spyder/app/mainwindow.py):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QMainWindow</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="n">qapp</span> <span class="o">=</span> <span class="n">QApplication</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">QMainWindow</span></code> is a pre-built widget that provides many standard window features as toolbars, menus, a status bar, dockable widgets and more, which serves as the basis for the application.</p>
@@ -522,7 +528,7 @@ In Qt they are represented by <code class="docutils literal notranslate"><span c
   <div class="footer-item">
     
 <p class="component-author">
-By Spyder Development Team
+By Spyder-API-Docs Contributors
 </p>
 
   </div>
@@ -532,7 +538,7 @@ By Spyder Development Team
 
   <p class="copyright">
     
-      © Copyright 2020, Spyder Development Team.
+      © Copyright  2020-2024 Spyder-API-Docs Contributors; MIT License.
       <br/>
     
   </p>

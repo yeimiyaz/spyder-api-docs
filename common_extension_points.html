@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Extending Spyder &#8212; Spyder API docs 5 documentation</title>
+    <title>Extending Spyder &#8212; Spyder Developer Docs 6 documentation</title>
   
   
   
@@ -36,11 +36,12 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=50c2a312"></script>
+    <script src="_static/documentation_options.js?v=47b62374"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'common_extension_points';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Design patterns" href="design_patterns.html" />
@@ -131,8 +132,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/spyder_logo.svg" class="logo__image only-light" alt="Spyder Developer Docs 6 documentation - Home"/>
+    <script>document.write(`<img src="_static/spyder_logo.svg" class="logo__image only-dark" alt="Spyder Developer Docs 6 documentation - Home"/>`);</script>
   
-    <p class="title logo__title">Spyder API docs 5 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -553,7 +560,7 @@ the functionality of plugins tehmeselves.</p>
 <span class="sd">            successfully, and the second item (str) indicates the error</span>
 <span class="sd">            message, if any.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="kc">True</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some usefull error message in case of problems.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some useful error message in case of problems.&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">create_project</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -566,7 +573,7 @@ the functionality of plugins tehmeselves.</p>
 <span class="sd">            successfully, and the second item (str) indicates the error</span>
 <span class="sd">            message, if any.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some usefull error message in case of problems.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some useful error message in case of problems.&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">open_project</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -579,7 +586,7 @@ the functionality of plugins tehmeselves.</p>
 <span class="sd">            successfully, and the second item (str) indicates the error</span>
 <span class="sd">            message, if any.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some usefull error message in case of problems.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some useful error message in case of problems.&quot;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">close_project</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -592,7 +599,7 @@ the functionality of plugins tehmeselves.</p>
 <span class="sd">            successfully, and the second item (str) indicates the error</span>
 <span class="sd">            message, if any.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some usefull error message in case of problems.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span>  <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Some useful error message in case of problems.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>And then register the new project type with the projects plugin.</p>
@@ -713,7 +720,7 @@ the functionality of plugins tehmeselves.</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Spyder Development Team
+By Spyder-API-Docs Contributors
 </p>
 
   </div>
@@ -723,7 +730,7 @@ By Spyder Development Team
 
   <p class="copyright">
     
-      © Copyright 2020, Spyder Development Team.
+      © Copyright  2020-2024 Spyder-API-Docs Contributors; MIT License.
       <br/>
     
   </p>

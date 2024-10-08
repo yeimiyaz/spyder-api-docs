@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Our first Spyder plugin &#8212; Spyder API docs 5 documentation</title>
+    <title>Our first Spyder plugin &#8212; Spyder Developer Docs 6 documentation</title>
   
   
   
@@ -36,11 +36,12 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=50c2a312"></script>
+    <script src="_static/documentation_options.js?v=47b62374"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plugin_tutorial_1';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Plugin Development with Spyder" href="plugin_development.html" />
@@ -131,8 +132,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/spyder_logo.svg" class="logo__image only-light" alt="Spyder Developer Docs 6 documentation - Home"/>
+    <script>document.write(`<img src="_static/spyder_logo.svg" class="logo__image only-dark" alt="Spyder Developer Docs 6 documentation - Home"/>`);</script>
   
-    <p class="title logo__title">Spyder API docs 5 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -417,11 +424,12 @@ document.write(`
 <h2>Set the development environment<a class="headerlink" href="#set-the-development-environment" title="Link to this heading">#</a></h2>
 <section id="conda-the-recommended-way">
 <h3>Conda (the recommended way)<a class="headerlink" href="#conda-the-recommended-way" title="Link to this heading">#</a></h3>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>More information</strong></p>
-<p>(TODO: Link to conda environments.)
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>More information</strong>
+(TODO: Link to conda environments.)
 (TODO: Link to python environments.)</p>
-</aside>
+</div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>spyder-plugin<span class="w"> </span><span class="s2">&quot;python=3.8&quot;</span><span class="w"> </span><span class="s2">&quot;spyder=5&quot;</span><span class="w"> </span>--channel<span class="w"> </span>conda-forge<span class="w"> </span>--yes<span class="w"> </span>--quiet
 conda<span class="w"> </span>activate<span class="w"> </span>spyder-plugin
 </pre></div>
@@ -452,10 +460,11 @@ Here is <a class="reference external" href="https://jupyter.org">markdown link s
 <h3><code class="docutils literal notranslate"><span class="pre">__init__.py</span></code><a class="headerlink" href="#init-py" title="Link to this heading">#</a></h3>
 <p>Spyder plugins are Python installable packages, so we need to define some
 information. For now we just need to add a version string for our package.</p>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>More information</strong></p>
-<p>(TODO: Link to semantic versioning.</p>
-</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>More information</strong>
+(TODO: Link to semantic versioning.</p>
+</div>
 <p>We recommend using semantic versioning. This basically means a version is
 divided in <code class="docutils literal notranslate"><span class="pre">&quot;Major.Minor.Patch&quot;</span></code> components where:</p>
 <ul class="simple">
@@ -472,10 +481,11 @@ divided in <code class="docutils literal notranslate"><span class="pre">&quot;Ma
 </section>
 <section id="plugin-py">
 <h3><code class="docutils literal notranslate"><span class="pre">plugin.py</span></code><a class="headerlink" href="#plugin-py" title="Link to this heading">#</a></h3>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>More information</strong></p>
-<p>(On plugins and on icons)</p>
-</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>More information</strong>
+(On plugins and on icons)</p>
+</div>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">my-spyder-plugin/my_spyder_plugin/plugin.py</span></code></span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Third party imports</span>
@@ -509,10 +519,11 @@ divided in <code class="docutils literal notranslate"><span class="pre">&quot;Ma
 </section>
 <section id="setup-py">
 <h3><code class="docutils literal notranslate"><span class="pre">setup.py</span></code><a class="headerlink" href="#setup-py" title="Link to this heading">#</a></h3>
-<aside class="margin sidebar">
-<p class="sidebar-title"><strong>More information</strong></p>
-<p>(TODO: Link to semantic python packaging for more info if interested)</p>
-</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>More information</strong>
+(TODO: Link to semantic python packaging for more info if interested)</p>
+</div>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">my-spyder-plugin/setup.py</span></code></span><a class="headerlink" href="#id3" title="Link to this code">#</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Third party imports</span>
@@ -700,7 +711,7 @@ divided in <code class="docutils literal notranslate"><span class="pre">&quot;Ma
   <div class="footer-item">
     
 <p class="component-author">
-By Spyder Development Team
+By Spyder-API-Docs Contributors
 </p>
 
   </div>
@@ -710,7 +721,7 @@ By Spyder Development Team
 
   <p class="copyright">
     
-      © Copyright 2020, Spyder Development Team.
+      © Copyright  2020-2024 Spyder-API-Docs Contributors; MIT License.
       <br/>
     
   </p>

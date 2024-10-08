@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Plugin Development with Spyder &#8212; Spyder API docs 5 documentation</title>
+    <title>Plugin Development with Spyder &#8212; Spyder Developer Docs 6 documentation</title>
   
   
   
@@ -36,11 +36,12 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=50c2a312"></script>
+    <script src="_static/documentation_options.js?v=47b62374"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plugin_development';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Extending Spyder" href="common_extension_points.html" />
@@ -131,8 +132,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/spyder_logo.svg" class="logo__image only-light" alt="Spyder Developer Docs 6 documentation - Home"/>
+    <script>document.write(`<img src="_static/spyder_logo.svg" class="logo__image only-dark" alt="Spyder Developer Docs 6 documentation - Home"/>`);</script>
   
-    <p class="title logo__title">Spyder API docs 5 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -594,7 +601,7 @@ This involves spending considerable time understanding its inner workings.</p>
 </section>
 <section id="set-up-a-development-environment">
 <h2>Set up a development environment<a class="headerlink" href="#set-up-a-development-environment" title="Link to this heading">#</a></h2>
-<p>In principle, we could use any Spyder installed within a <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#virtual-environments">conda environment</a> according to the instructions given in the <a class="reference external" href="https://docs.spyder-ide.org/5/installation.html">installation guide</a>.</p>
+<p>In principle, we could use any Spyder installed within a <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/concepts/environments.html">conda environment</a> according to the instructions given in the <a class="reference external" href="https://docs.spyder-ide.org/5/installation.html">installation guide</a>.</p>
 <p>However, if you use a working environment that has other dependencies and you want to keep your plugin development independent of them, it is recommended to create a new environment which only has Spyder with the minimum dependencies needed for your plugin.</p>
 <img alt="Spyder development environment." src="_images/pd_dev_environment.png" />
 <p>We can install it in the following way:</p>
@@ -608,7 +615,7 @@ $<span class="w"> </span>mamba<span class="w"> </span>install<span class="w"> </
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a> is a Python distribution for data science and machine learning to be used in a single machine.</p></li>
+<li><p><a class="reference external" href="https://www.anaconda.com/download">Anaconda Individual Edition</a> is a Python distribution for data science and machine learning to be used in a single machine.</p></li>
 <li><p><a class="reference external" href="https://docs.conda.io/en/latest/">Conda</a> is an Anaconda tool that manages virtual environments and their packages.</p></li>
 <li><p>Conda can work with <em>channels</em> that allow the use of packages that are not part of the official distribution. The most important channel is <a class="reference external" href="https://conda-forge.org/">conda-forge</a>, where a more extensive and updated list of packages than those offered by Anaconda Individual Edition are maintained.</p></li>
 <li><p>Finally, <a class="reference external" href="https://github.com/mamba-org/mamba">mamba</a>, is an optimized implementation of conda’s package management features, that resolves dependencies and installs packages much faster than conda.</p></li>
@@ -628,7 +635,7 @@ $<span class="w"> </span>mamba<span class="w"> </span>install<span class="w"> </
 <li><p>In the main window of the recently created repository, click on the green “Code” button an copy the clone link.</p></li>
 <li><p>In your local command line run <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">[repo-link]</span></code>. You must have git installed and configured on your computer. If you don’t have experience using git we recommend The Carpentries workshop <a class="reference external" href="https://swcarpentry.github.io/git-novice/">Version control with git</a>.</p></li>
 </ol>
-<p>A detailed description of <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/create-a-repo">repository creation</a> could be found in the official Github documentation, and a <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/hello-world">hello world</a> tutorial with basic git operations from the Github interface.</p>
+<p>A detailed description of <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories">repository creation</a> could be found in the official Github documentation, and a <a class="reference external" href="https://docs.github.com/en/get-started/start-your-journey/hello-world">hello world</a> tutorial with basic git operations from the Github interface.</p>
 </section>
 <section id="let-s-get-started">
 <h2>Let’s get started<a class="headerlink" href="#let-s-get-started" title="Link to this heading">#</a></h2>
@@ -1606,7 +1613,7 @@ Specifically in <code class="docutils literal notranslate"><span class="pre">set
   <div class="footer-item">
     
 <p class="component-author">
-By Spyder Development Team
+By Spyder-API-Docs Contributors
 </p>
 
   </div>
@@ -1616,7 +1623,7 @@ By Spyder Development Team
 
   <p class="copyright">
     
-      © Copyright 2020, Spyder Development Team.
+      © Copyright  2020-2024 Spyder-API-Docs Contributors; MIT License.
       <br/>
     
   </p>
